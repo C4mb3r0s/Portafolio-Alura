@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /*Variables de los colores generales de la página*/
+  --color-primario: #000000;
+  --color-secundario: #F6F6F6;
+  --color-terciario: #22D4FD;
+  --color-hover: #272727;
+  /*Variables de las fuentes*/
+  --fuente-montserrat: 'Montserrat', sans-serif;
+  --fuente-krona: 'Krona one', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 2% 0% 0% 15%;
+}
+
+.header-nav {
+  display: flex;
+  gap: 80px;
+}
+
+.header-options {
+  font-family: var(--fuente-montserrat);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-terciario);
+  text-decoration: none;
+}
+
+.title-content {
+  font-size: 2.25rem;
+  font-family: var(--fuente-krona);
+}
+
+.parraf-presentation {
+  font-size: 1.5rem;
+  font-family: var(--fuente-montserrat);
+}
+
+.title-destaque {
+  color: var(--color-terciario);
+}
+
+.content-presentation {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.presentation {
+  display: flex;
+  align-items: center;
+  padding: 4% 15%;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.presentation-enlaces {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.presentation-enlaces-title {
+  font-family: var(--fuente-krona);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.enlaces {
+  width: 50%;
+  text-align: center;
+  padding: 21.5px 0;
+  border-radius: 8px;
+  font-family: var(--fuente-montserrat);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-secundario);
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.enlaces:hover {
+  background-color: var(--color-hover);
+}
+
+.imagen__presentacion {
+  width: 60%;
+}
+
+.footer {
+  background-color: var(--color-terciario);
+  padding: 24px;
+  color: var(--color-primario);
+  text-align: center;
+  font-family: var(--fuente-montserrat);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 10%;
+  }
+
+  .header-nav {
+    justify-content: center;
+  }
+
+  .presentation {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .content-presentation {
+    width: auto;
+  }
+}
